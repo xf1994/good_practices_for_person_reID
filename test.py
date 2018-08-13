@@ -22,7 +22,7 @@ from resnext import resnext50
 parser = argparse.ArgumentParser(description='Training')
 parser.add_argument('--gpu_ids',default='2', type=str,help='gpu_ids: e.g. 0  0,1,2  0,2')
 parser.add_argument('--which_epoch',default='last', type=str, help='0,1,2,3...or last')
-parser.add_argument('--test_dir',default='/home/xiongfu/xiongfu/cuhk03-np/detected/pytorch',type=str, help='./test_data')
+parser.add_argument('--test_dir',default='/home/xiongfu/xiongfu/market/pytorch',type=str, help='./test_data')
 parser.add_argument('--name', default='ft_ResNet50', type=str, help='save model path')
 parser.add_argument('--batchsize', default=64, type=int, help='batchsize')
 parser.add_argument('--use_dense', action='store_true', help='use densenet121' )
